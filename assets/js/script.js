@@ -3,16 +3,47 @@ let keyboard = document.getElementById("keyboardimg");
 
 keyboard.oncontextmenu = "return false;"
 
-var score = 0;
+
+
+document.getElementById("scorenum").innerHTML = 0;
 
 /**
  * Incrementally adds number of clicks/keypresses by 1 and adds it to current score
  */
 function addClicks() {
-    score++;
-    document.getElementById("scorenum").innerHTML = score;
+    clicks++; 
+	document.getElementById("scorenum").innerText = clicks; 
     
 };
+
+var clicks = 0;
+var clickSecond = 0;
+
+
+
+
+
+
+
+
+setInterval(function() {
+	clicks += clickSecond; 
+	document.getElementById("scorenum").innerText = clicks; 
+}, 1000) 
+
+
+function autoClick() {
+
+	if (clicks >= 10)
+	{
+		clicks -= 10; 
+		document.getElementById("scorenum").innerText = clicks;
+		
+		clickSecond += 3; 
+		
+	}
+}
+
 
 
 var timeleft = 30;
@@ -28,6 +59,7 @@ var timer = setInterval(function(){
     document.getElementById("countdown").innerHTML = timeleft + "s";
      timeleft -= 1;
 }, 1000);
+
 
 
 /**
