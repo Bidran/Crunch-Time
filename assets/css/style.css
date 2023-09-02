@@ -165,6 +165,8 @@ z-index: 4;}
     .clickbutton {
         margin-bottom: 1em;    
        }
+       .header-element {
+        font-size: 3vw;
 }
 
 @media screen and (max-height: 600px) {
@@ -195,8 +197,7 @@ z-index: 4;}
         height: 150px;
         margin-left: 35%;
     }
-  .header-element {
-    font-size: 5vw;
+ 
   }
   .time {
     margin-left: 55%;
