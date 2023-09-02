@@ -30,11 +30,50 @@ var timer = setInterval(function(){
 }, 1000);
 
 
+/**
+ * Zoom keyboard when action is done
+ */
 function zoom(){
     keyboard.style.transform = "scale(1.02)";
    
 }
+
+/**
+ * Zoom out keyboard when action is done
+ */
 function zoomOut(){
     keyboard.style.transform = "scale(100%)";
 }
 
+
+
+
+var buttonclick0 = document.getElementsByClassName('icon')[0];
+var buttonclick1 = document.getElementsByClassName('icon')[1];
+var buttonclick2 = document.getElementsByClassName('icon')[2];
+
+function zoomButton(){
+    buttonclick0.style.transform = "scale(1.1)"
+   
+}
+
+function zoomOutButton(){
+    buttonclick0.style.transform = "scale(100%)";
+}
+
+function zoomButton1(){
+    buttonclick1.style.transform = "scale(1.1)"
+   
+}
+
+function zoomOutButton1(){
+    buttonclick1.style.transform = "scale(100%)";
+}
+function zoomButton2(){
+    buttonclick2.style.transform = "scale(1.1)"
+   
+}
+
+function zoomOutButton2(){
+    buttonclick2.style.transform = "scale(100%)";
+}

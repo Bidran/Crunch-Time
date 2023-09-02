@@ -43,10 +43,11 @@ z-index: 4;}
   background-color: rgba(241, 224, 224, 0);
   padding: 2px;
   border: 3px ridge rgba(0, 0, 0, 0.342);
- 
- 
 
 }
+
+
+
 .buttontext {
     color: whitesmoke;
     text-align: center;
@@ -114,6 +115,7 @@ z-index: 4;}
    position: fixed;
    bottom: 0;
     z-index: 4;
+    
 }
 
 
