@@ -1,7 +1,7 @@
 
 let keyboard = document.getElementById("keyboardimg");
 
-
+keyboard.oncontextmenu = "return false;"
 
 var score = 0;
 
