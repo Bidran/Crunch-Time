@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body onkeyup="addClicks()">
+<body onkeyup="addClicks(); zoomOut()" onkeydown="zoom()">
     <header class="index">
         <div class="header-element score">Clicks: <br> <p id="scorenum"><br></p></div>
         <div class="header-element time">Time: <br> <p id="countdown"><br></p></div>
@@ -20,7 +20,7 @@
     </div>
 
     <div id="keyboard" >
-        <img id="keyboardimg" onclick="addClicks()" src="./assets/images/keyboardgreen.png" alt="">
+        <img id="keyboardimg" onmouseup="zoomOut()" onmousedown="zoom()" onclick="addClicks()" src="./assets/images/keyboardgreen.png" alt="">
     </div>
     <section class="allbuttons">
         <div class="clickbutton index">
