@@ -95,6 +95,27 @@ header {
         
         margin-left: 30%;
     }
+ 
 }
+
+
+
+@media screen and (min-width: 1800px) {
+    #keyboardimg {
+        width: 30%;
+        height: 150px;
+        margin-left: 35%;
+    }
+}
+
+
+@media screen and (min-width: 2000px) {
+    #keyboardimg {
+        width: 30%;
+        height: 200px;
+        margin-left: 35%;
+    }
+}
+
 
 
