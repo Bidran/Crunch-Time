@@ -2,13 +2,17 @@
 padding: 0;}
 
 
+body {
+    background-color: #8aac0f;
+}
+
 .background {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
     position: absolute;
     object-fit: fill;
-    transform: translate(0%,-10%);
+    
    
     
     
@@ -18,4 +22,5 @@ padding: 0;}
     width: 100%;
     object-fit: fill;
     overflow: hidden;
+    transform: translate(0%,-10%);
 }
