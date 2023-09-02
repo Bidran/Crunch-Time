@@ -39,7 +39,7 @@ header {
 .background {
     margin-top: 0px;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
     overflow: hidden;
     position: absolute;
     object-fit: fill;
