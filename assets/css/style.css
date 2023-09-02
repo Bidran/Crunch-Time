@@ -18,6 +18,35 @@ header {
     z-index: 3;
 }
 
+.index {position: relative;
+z-index: 4;}
+
+.clickbutton {
+    
+ object-fit: contain;
+ width: fit-content;
+    
+}
+
+.icon {
+    object-fit: contain;
+    width: 15%;
+    text-align: center;
+ 
+  background-color: rgba(241, 224, 224, 0);
+  padding: 2px;
+  border: 3px ridge rgba(0, 0, 0, 0.342);
+ 
+ 
+
+}
+.buttontext {
+    color: whitesmoke;
+    text-align: center;
+    width: fit-content;
+    
+}
+
 .header-element {
     background-color: rgba(15, 1, 1, 0.308);
     padding: 0 0.3em 0 0.3em;
