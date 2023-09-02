@@ -10,15 +10,17 @@
 
 <body>
     <header class="index">
-        <div class="header-element" id="score">Score</div>
-        <div class="header-element" id="time">Time</div>
+        <div class="header-element score">Clicks: <br> <p id="scorenum"><br></p></div>
+        <div class="header-element time">Time: <br> 60s</div>
+        
+       
     </header>
     <div class="background">
         <img id="image" src="./assets/images/pcbackground.gif" alt="">
     </div>
 
-    <div id="keyboard">
-        <img id="keyboardimg" src="./assets/images/keyboardgreen.png" alt="">
+    <div id="keyboard" >
+        <img id="keyboardimg" onclick="addClicks()" src="./assets/images/keyboardgreen.png" alt="">
     </div>
     <section class="allbuttons">
         <div class="clickbutton index">
@@ -37,7 +39,7 @@
             <p class="buttontext">100 Clicks</p>
         </div>
     </section>
-
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

@@ -72,11 +72,11 @@ z-index: 4;}
     font-size: 6vw;
     
 }
-#score {margin-left: 5%;
-   
+.score {margin-left: 5%;
+   width: 15%;
 }
-#time {
-   margin-left: 50%;
+.time {
+   margin-left: 45%;
 }
 .background {
     margin-top: 0px;
@@ -194,6 +194,12 @@ z-index: 4;}
         height: 150px;
         margin-left: 35%;
     }
+  .header-element {
+    font-size: 5vw;
+  }
+  .time {
+    margin-left: 55%;
+  }
 }
 
 
