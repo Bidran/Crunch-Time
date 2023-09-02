@@ -53,8 +53,23 @@ header {
     width: 100%;
     object-fit: fill;
     overflow: hidden;
-    transform: translate(0%,-19%);
+    transform: translate(0%,-18%);
     z-index: 2;
     margin-top: 0px;
     position: absolute;
 }
+
+#keyboard {
+    width: 100%;
+}
+
+#keyboardimg {
+    width: 40%;
+    height: 20%;
+   position: fixed;
+   bottom: 0;
+    
+   
+    z-index: 4;
+}
+
