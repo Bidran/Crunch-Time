@@ -11,7 +11,7 @@ document.getElementById("scorenum").innerHTML = 0;
  * Incrementally adds number of clicks/keypresses by 1 and adds it to current score
  */
 function addClicks() {
-    clicks++; 
+     clicks += clickClick; 
 	document.getElementById("scorenum").innerText = clicks; 
     
 };
@@ -20,18 +20,14 @@ var clicks = 0;
 var clickSecond = 0;
 
 
-
-
-
-
-
-
 setInterval(function() {
 	clicks += clickSecond; 
 	document.getElementById("scorenum").innerText = clicks; 
 }, 1000) 
 
-
+/**
+ * Item that auto clicks 3 times in one second
+ */
 function autoClick() {
 
 	if (clicks >= 10)
@@ -44,9 +40,22 @@ function autoClick() {
 	}
 }
 
+var clickClick = 1
+
+function doubleClick (){
+    if (clicks >= 200 )
+    {
+        clicks -= 200;
+        document.getElementById("scorenum").innerText = clicks;
+        clickClick = clickClick*2;
+
+       
+    }
+}
+
+var timeleft = 20;
 
 
-var timeleft = 30;
 
 /**
  * Timer which counts down from 30
