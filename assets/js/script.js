@@ -1,4 +1,8 @@
+
+
 let keyboard = document.getElementById("keyboardimg");
+
+
 
 let score = 0;
 
