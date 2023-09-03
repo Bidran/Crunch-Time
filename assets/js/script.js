@@ -77,13 +77,14 @@ var timeleft = 20;
 
 
 /**
- * Timer which counts down from 30
+ * Timer which counts down from 20
  */
-var timer = setInterval(function(){
+var timer ;
+setInterval(function times(){
    
   if(timeleft <= 0){
     clearInterval(timer);
-    document.getElementById("countdown").innerHTML = "0";
+    document.getElementById("countdown").innerHTML = timeleft;
     document.getElementById("final-score-text").innerHTML = clicks;
     let finalScreen = document.getElementById('final-score');
     finalScreen.style.display = "block";
@@ -91,6 +92,7 @@ var timer = setInterval(function(){
     clickSecond = 0;
     let buttons = document.getElementsByClassName('allbuttons')[0]
     buttons.style.display = "none";
+    
     
     
   } else  {
@@ -99,34 +101,23 @@ var timer = setInterval(function(){
 }, 1000);
 
 function retry(){
+    
     let finalScreen = document.getElementById('final-score');
     finalScreen.style.display = "none";
     let buttons = document.getElementsByClassName('allbuttons')[0]
     buttons.style.display = 'flex';
-    timeleft = 20;
+    
     clicks = 0;
     clickClick = 1;
     clickSecond = 0;
-    setInterval(function(){
+    
+     timeleft = 20;
+    
    
-  if(timeleft <= 0){
-    clearInterval(timer);
-    document.getElementById("countdown").innerHTML = "0";
-    document.getElementById("final-score-text").innerHTML = clicks;
-    let finalScreen = document.getElementById('final-score');
-    finalScreen.style.display = "block";
-    clickClick = 0;
-    clickSecond = 0;
-    let buttons = document.getElementsByClassName('allbuttons')[0]
-    buttons.style.display = "none";
     
-    
-  } else  {
-    document.getElementById("countdown").innerHTML = timeleft + "s";
-     timeleft -= 1;}
-}, 1000);
-    
-    
+
+ 
+  
 }
 
 
