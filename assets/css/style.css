@@ -74,10 +74,12 @@ z-index: 4;}
     
 }
 .score {margin-left: 5%;
-   width: 15%;
+   width: fit-content;
 }
 .time {
-   margin-left: 45%;
+    position: absolute;
+    left: 20%;
+   margin-left: 55%;
 }
 .background {
     margin-top: 0px;
