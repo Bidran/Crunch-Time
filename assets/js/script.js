@@ -31,16 +31,16 @@ setInterval(function() {
 }, 1000) 
 
 /**
- * Item that auto clicks 3 times in one second
+ * Item that auto clicks 10 times in one second
  */
 function autoClick() {
 
-	if (clicks >= 10)
+	if (clicks >= 20)
 	{
-		clicks -= 10; 
+		clicks -= 20; 
 		document.getElementById("scorenum").innerText = clicks;
 		
-		clickSecond += 3; 
+		clickSecond += 10; 
 		
 	}
 }
