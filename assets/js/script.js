@@ -1,4 +1,6 @@
 
+
+
 let keyboard = document.getElementById("keyboardimg");
 
 keyboard.oncontextmenu = "return false;"
@@ -12,12 +14,15 @@ document.getElementById("scorenum").innerHTML = 0;
  */
 function addClicks() {
      clicks += clickClick; 
-	document.getElementById("scorenum").innerText = clicks; 
-    
+	document.getElementById("scorenum").innerText = clicks;  
 };
 
 var clicks = 0;
 var clickSecond = 0;
+
+
+
+
 
 
 setInterval(function() {
@@ -66,6 +71,8 @@ function x4Click(){
 
 
 
+
+
 var timeleft = 20;
 
 
@@ -77,6 +84,15 @@ var timer = setInterval(function(){
   if(timeleft <= 0){
     clearInterval(timer);
     document.getElementById("countdown").innerHTML = "0";
+    document.getElementById("final-score-text").innerHTML = clicks;
+    let finalScreen = document.getElementById('final-score');
+    finalScreen.style.display = "block";
+    clickClick = 0;
+    clickSecond = 0;
+    let buttons = document.getElementsByClassName('allbuttons')[0]
+    buttons.style.display = "none";
+    
+    
   } else 
     document.getElementById("countdown").innerHTML = timeleft + "s";
      timeleft -= 1;
@@ -84,6 +100,11 @@ var timer = setInterval(function(){
 
 
 
+function outOfTime (){
+    if ( document.getElementById("countdown").innerHTML = "0") {
+        document.getElementById("final-score-text").innerHTML = clicks;
+    }
+}
 
 /**
  * Zoom keyboard when action is done

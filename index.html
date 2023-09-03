@@ -10,35 +10,53 @@
 
 <body onkeyup="addClicks(); zoomOut()" onkeydown="zoom()">
     <header class="index">
-        <div class="header-element score">Clicks: <br> <p id="scorenum"><br></p></div>
-        <div class="header-element time">Time: <br> <p id="countdown"><br></p></div>
-        
-       
+        <div class="header-element score">Clicks: <br>
+            <p id="scorenum"><br></p>
+        </div>
+        <div class="header-element time">Time: <br>
+            <p id="countdown"><br></p>
+        </div>
+
+
     </header>
     <div class="background">
         <img id="image" src="./assets/images/pcbackground.gif" alt="">
     </div>
 
-    <div id="keyboard" >
-        <img id="keyboardimg"   onpointerdown="zoom()" onpointerup="addClicks(); zoomOut()" src="./assets/images/keyboardgreen.png" alt="">
+    <div id="keyboard">
+        <img id="keyboardimg" onpointerdown="zoom()" onpointerup="addClicks(); zoomOut()"
+            src="./assets/images/keyboardgreen.png" alt="">
     </div>
     <section class="allbuttons" id="all">
         <div class="clickbutton index">
             <p class="buttontext">Auto Click</p>
-            <img  class="icon" onpointerdown="zoomButton()"  onpointerup="zoomOutButton() ;autoClick()" id="autoclickimg" src="./assets/images/icons/autoclickicon.png" alt="">
+            <img class="icon" onpointerdown="zoomButton()" onpointerup="zoomOutButton() ;autoClick()" id="autoclickimg"
+                src="./assets/images/icons/autoclickicon.png" alt="">
             <p class="buttontext">10 Clicks</p>
         </div>
         <div class="clickbutton index">
             <p class="buttontext">x2 Click</p>
-            <img class="icon" onpointerdown="zoomButton1()"  onpointerup="doubleClick(); zoomOutButton1()" id="autoclickimg" src="./assets/images/icons/twohandsicon.png" alt="">
+            <img class="icon" onpointerdown="zoomButton1()" onpointerup="doubleClick(); zoomOutButton1()"
+                id="autoclickimg" src="./assets/images/icons/twohandsicon.png" alt="">
             <p class="buttontext">200 Clicks</p>
         </div>
         <div class="clickbutton index">
             <p class="buttontext">x4 Click</p>
-            <img class="icon" onpointerdown="zoomButton2()"  onpointerup="x4Click() ; zoomOutButton2()" id="autoclickimg" src="./assets/images/icons/brainicon.png" alt="">
+            <img class="icon" onpointerdown="zoomButton2()" onpointerup="x4Click() ; zoomOutButton2()" id="autoclickimg"
+                src="./assets/images/icons/brainicon.png" alt="">
             <p class="buttontext">300 Clicks</p>
         </div>
     </section>
+    <div id="final-score"><strong>Congratulations!</strong>
+        <br> 
+        <br> 
+        You've successfully published your project.
+        <br>
+        Your final score was:
+        <br>
+        <p id="final-score-text"></p>
+        <br>
+    </div>
     <script src="./assets/js/script.js"></script>
 </body>
 

@@ -94,6 +94,26 @@ z-index: 4;}
 }
 
 
+
+#final-score {
+    position: absolute;
+    background-color: black;
+    top: 0;
+   width: 100vw;
+   height: 100vh;
+    
+    
+    z-index: 99;
+    background-color: rgb(15, 1, 1);
+    line-height: 150%;
+    color: #70af6d;
+    font-size: xx-large;
+    text-align: center;
+   
+}
+
+
+
 #image {
     width: 100%;
     object-fit: fill;
@@ -162,6 +182,9 @@ z-index: 4;}
         margin-left: 5%;
         display: flex;
         flex-direction: column;
+    }
+    #final-score {
+        font-size: 4rem;
     }
     .icon {width: 20%;}
     .clickbutton {
