@@ -85,7 +85,7 @@ setInterval(function times(){
   if(timeleft <= 0){
     clearInterval(timer);
     document.getElementById("countdown").innerHTML = timeleft;
-    document.getElementById("final-score-text").innerHTML = clicks;
+    document.getElementById("final-score-text").innerHTML = clicks.toLocaleString();
     let finalScreen = document.getElementById('final-score');
     finalScreen.style.display = "block";
     clickClick = 0;
