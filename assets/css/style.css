@@ -21,18 +21,89 @@ header {
 .index {position: relative;
 z-index: 4;}
 
-.clickbutton {
-    
- object-fit: contain;
- width: fit-content;
+
+
+#intro {
+    position: absolute;
+    background-color: black;
+    top: 0;
+   width: 100%;
+   height: 130%;
+    z-index: 999;
+    background-color: rgb(15, 1, 1);
+    line-height: 150%;
+    color: #70af6d;
+    font-size: normal;
+    text-align: center;
+  
     
 }
+
+#intro p {font-size: small;
+    
+    letter-spacing: .15em;
+    margin: 0 auto;
+    white-space: normal;
+    overflow: hidden;
+    animation:
+     typing 1.5s steps(100, start);}
+
+#keyboardintro {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 60%
+}
+
+.introicon {
+    width: 30px;
+}
+
+#intro-all-icons {
+    margin-top: 2em;
+ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.description p {
+    margin: 0;
+    font-size: 2px;
+    width: fit-content;
+}
+
+#start {
+    
+        font-size: 2rem;
+        padding: 1rem;
+        width: fit-content;
+        height: fit-content;
+        margin-top: 2rem;
+        background-color: rgb(15, 1, 1);
+        color: #70af6d;
+        border: 0.4rem ridge #306230;
+      
+      
+        
+   
+}
+#start:hover {
+    background-color: rgba(37, 63, 39, 0.377);
+    
+}
+
+.clickbutton {
+    
+    object-fit: contain;
+    width: fit-content;
+       
+   }
 
 .allbuttons {
     position: absolute;
     bottom: 30%;
     margin-left: 10%;
     display: flex;
+   
 
 }
 .icon {
@@ -49,11 +120,13 @@ z-index: 4;}
 
 
 .buttontext {
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
     text-align: center;
-    width: fit-content;
-    font-size: 1.3em;
-    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+   width: fit-content;
+    font-size: 1em;
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
     
 }
 
@@ -154,17 +227,59 @@ z-index: 4;}
     
 }
 
+@media screen and (min-width: 500px) {
+
+    .icon {
+        width: 50%;
+    }
+    #keyboardimg {
+        width: 70%;
+        
+        margin-left: 15%;
+    }
+    .allbuttons {margin-left: 12%;}
+}
 
 
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 700px) {
+  
+    .icon {width: 25%;}
+    .allbuttons {margin-left: 20%;}
     #keyboardimg {
         width: 60%;
         
         margin-left: 20%;
     }
-    .icon {width: 30%;}
-    .allbuttons {margin-left: 20%;}
+    #keyboardintro {
+        width: 40%;
+    }
+
+    #intro p {
+        font-size: large;
+    }
+   
+}
+
+
+@media screen and (min-width: 800px) {
+    
+   
+.icon {
+    width: 15%;
+}
+    .allbuttons {
+        position: absolute;
+        bottom: 5%;
+        margin-left: 5%;
+        display: flex;
+        flex-direction: column;
+    }
+    #intro p {
+        font-size: larger;
+    }
+    .introicon {
+        width: 4rem;
+    }
 }
 
 @media screen and (max-height: 600px)  {
@@ -175,6 +290,8 @@ z-index: 4;}
     }
     .icon {width: 10%;}
     .allbuttons {margin-left: 15%;}
+
+   
 }
 
 @media screen and (min-width: 1000px) {
@@ -183,20 +300,12 @@ z-index: 4;}
         
         margin-left: 30%;
     }
-    .icon {width: 25%;}
-    .allbuttons {
-        bottom: 25%;
-    }
+    .icon {width: 20%;}
+    
  
 }
 @media screen and (min-width: 1200px) {
-    .allbuttons {
-        position: absolute;
-        bottom: 5%;
-        margin-left: 5%;
-        display: flex;
-        flex-direction: column;
-    }
+    
     #final-score {
         font-size: 4rem;
     }
@@ -206,6 +315,7 @@ z-index: 4;}
        }
        .header-element {
         font-size: 3vw;
+       } 
 }
 
 @media screen and (max-height: 600px) {
@@ -241,7 +351,7 @@ z-index: 4;}
   .time {
     margin-left: 55%;
   }
-}
+
 
 
 @media screen and (min-width: 2000px) {
@@ -253,4 +363,7 @@ z-index: 4;}
 }
 
 
-
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
