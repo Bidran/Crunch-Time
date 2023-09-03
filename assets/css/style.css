@@ -21,6 +21,47 @@ header {
 .index {position: relative;
 z-index: 4;}
 
+#fourofour {
+   
+        position: absolute;
+        background-color: black;
+        top: 0;
+       width: 100%;
+       height: 100%;
+        z-index: 999;
+        background-color: rgb(15, 1, 1);
+        color: #70af6d;
+        font-size: 1.5rem;
+        text-align: center;
+      
+    }
+
+#fourofour p{margin-top: 1.5rem;
+    margin-bottom: 6rem;
+    font-size: 4rem;
+   
+}
+
+#fourofour-button {
+        font-size: 2rem;
+        padding: 1rem;
+     
+        height: fit-content;
+        margin-top: 7rem;
+        background-color: rgb(15, 1, 1);
+        color: #70af6d;
+        border: 0.4rem ridge #306230;
+      
+      width: fit-content;
+        
+}
+
+#fourofour-button:hover {
+    background-color: rgba(37, 63, 39, 0.377);
+    
+}
+
+
 
 
 #intro {
@@ -306,8 +347,17 @@ z-index: 4;}
         margin-top: 1em;
         width: 100%;
     }
+    #fourofour {
+        font-size: 2.5rem;
+    }
+
+    #fourofour p{
+        font-size: 7rem;
+       
+    }
     
- 
+    #fourofour-button {
+        font-size: 5rem;
 }
 @media screen and (min-width: 1200px) {
     
