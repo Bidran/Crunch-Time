@@ -80,7 +80,7 @@ z-index: 4;}
     
 }
 
-#intro p {font-size: 15px;
+#intro-text {font-size: 15px;
     
     letter-spacing: .15em;
     margin: 0 auto;
@@ -96,7 +96,7 @@ z-index: 4;}
 }
 
 .introicon {
-    width: 30px;
+    width: 25px;
 }
 
 #intro-all-icons {
@@ -106,10 +106,14 @@ z-index: 4;}
     justify-content: space-around;
 }
 
-.description p {
+.description  {
     margin: 0;
-    font-size: 2px;
-    width: fit-content;
+    font-size: smaller;
+    
+}
+
+#intro-all-icons div {
+    width: 50%;
 }
 
 #start {
