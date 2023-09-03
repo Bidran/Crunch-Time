@@ -42,6 +42,9 @@ function autoClick() {
 
 var clickClick = 1
 
+/**
+ * Takes away 200 from score and makes clicks give twice the amount
+ */
 function doubleClick (){
     if (clicks >= 200 )
     {
@@ -52,6 +55,16 @@ function doubleClick (){
        
     }
 }
+
+function x4Click(){
+    if (clicks >= 300) {
+        clicks -= 300;
+        document.getElementById("scorenum").innerText = clicks;
+        clickClick = clickClick*3;
+    }
+}
+
+
 
 var timeleft = 20;
 
@@ -68,6 +81,7 @@ var timer = setInterval(function(){
     document.getElementById("countdown").innerHTML = timeleft + "s";
      timeleft -= 1;
 }, 1000);
+
 
 
 
