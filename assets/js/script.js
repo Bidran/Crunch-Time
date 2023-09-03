@@ -72,7 +72,19 @@ function x4Click(){
 
 
 
-var timeleft = 20;
+
+
+var timeleft = 3;
+var button = document.getElementById('retry')
+
+function enable() {
+   
+    setTimeout(function(){
+        button.disabled = false
+      }, 1000);
+}
+
+
 
 
 
@@ -92,6 +104,10 @@ setInterval(function times(){
     clickSecond = 0;
     let buttons = document.getElementsByClassName('allbuttons')[0]
     buttons.style.display = "none";
+    enable(button);
+  
+    
+   
     
     
     
@@ -112,12 +128,7 @@ function retry(){
     clickSecond = 0;
     
      timeleft = 20;
-    
-   
-    
 
- 
-  
 }
 
 
