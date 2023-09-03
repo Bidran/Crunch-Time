@@ -74,7 +74,7 @@ function x4Click(){
 
 
 
-var timeleft = 3;
+var timeleft = 20;
 var button = document.getElementById('retry')
 
 function enable() {
@@ -84,7 +84,9 @@ function enable() {
       }, 1000);
 }
 
-
+function disable(){
+    button.disabled = true;
+}
 
 
 
@@ -106,14 +108,11 @@ setInterval(function times(){
     buttons.style.display = "none";
     enable(button);
   
-    
-   
-    
-    
-    
+
   } else  {
     document.getElementById("countdown").innerHTML = timeleft + "s";
-     timeleft -= 1;}
+     timeleft -= 1;
+     disable(button);}
 }, 1000);
 
 function retry(){
@@ -122,13 +121,10 @@ function retry(){
     finalScreen.style.display = "none";
     let buttons = document.getElementsByClassName('allbuttons')[0]
     buttons.style.display = 'flex';
-    
     clicks = 0;
     clickClick = 1;
     clickSecond = 0;
-    
      timeleft = 20;
-
 }
 
 
