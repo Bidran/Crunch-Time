@@ -109,10 +109,24 @@ z-index: 4;}
     color: #70af6d;
     font-size: xx-large;
     text-align: center;
-   
+    display: none;
 }
 
+#retry {
+    font-size: 4rem;
+    padding: 3rem;
+    width: fit-content;
+    height: fit-content;
+    
+    background-color: rgb(15, 1, 1);
+    color: #70af6d;
+    border: 0.4rem ridge #306230;
+}
 
+#retry:hover {
+    background-color: rgba(37, 63, 39, 0.377);
+    
+}
 
 #image {
     width: 100%;
