@@ -41,10 +41,11 @@ function autoClick() {
 		document.getElementById("scorenum").innerText = clicks;
 		
 		clickSecond += 10; 
-		
+		final += 20;
 	}
 }
 
+var final = 0;
 var clickClick = 1
 
 /**
@@ -56,6 +57,7 @@ function doubleClick (){
         clicks -= 200;
         document.getElementById("scorenum").innerText = clicks;
         clickClick = clickClick*2;
+        final += 200;
 
        
     }
@@ -66,6 +68,7 @@ function x4Click(){
         clicks -= 300;
         document.getElementById("scorenum").innerText = clicks;
         clickClick = clickClick*3;
+        final += 300;
     }
 }
 
@@ -99,7 +102,7 @@ setInterval(function times(){
   if(timeleft <= 0){
     clearInterval(timer);
     document.getElementById("countdown").innerHTML = timeleft;
-    document.getElementById("final-score-text").innerHTML = clicks.toLocaleString() + ' clicks';
+    document.getElementById("final-score-text").innerHTML = clicks + final + ' clicks';
     let finalScreen = document.getElementById('final-score');
     finalScreen.style.display = "block";
     clickClick = 0;
@@ -125,6 +128,7 @@ function retry(){
     clickClick = 1;
     clickSecond = 0;
      timeleft = 20;
+     final = 0;
 }
 
 
