@@ -1,5 +1,5 @@
 let keyboard = document.getElementById("keyboardimg");
-document.getElementById("scorenum").innerHTML = 0;
+
 
 
 var clicks = 0;
