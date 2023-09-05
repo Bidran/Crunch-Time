@@ -336,19 +336,19 @@ To clone the Crunch-Time repository:
  
    2. Introduction icons were not centered
       
-      <img src="./docs/bugs/bugintroicons" height = 400px>
+      <img src="./docs/bugs/bugintroicons.PNG" height = 400px>
  
       This issue was solved by making each of the divs have fixed width.
 
    3. The highscore was immediately saved as an old score.
       
-      <img src="./docs/bugs/highscore.png" height = 400px>
+      <img src="./docs/bugs/highscore.PNG" height = 400px>
  
       This issue was solved by replacing highscore functioning to use local storage rather than basic variables.
     
-    4. Validator was showing duplicate id names
+    4. Validator was showing duplicate id names.
       
-      <img src="./docs/bugs/autoclick.img" height = 400px>
+      <img src="./docs/bugs/autoclickimg.PNG" height = 400px>
  
       This issue was solved removing the id names which were caused by copying the img elements.
 
