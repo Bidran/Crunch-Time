@@ -10,41 +10,44 @@
 
 <body>
     <main>
-    <div id="intro">
-        <h1> Welcome to Crunch Time!</h1>
-        <p id="intro-text">
-              
-            <br>
-            <br>
-            You are an aspiring developer who has been tasked with finishing a project that's due tomorrow.
-            They have kindly given you 20 seconds to do so.
-            <br>
-            Press on a keyboard or use your physical keyboard on desktop to gain points.
-            <br>
-            <img id="keyboardintro" src="./assets/images/keyboardgreen.png" alt="">
-            <br>
-            Spend those points on upgrades:
-        </p>
-        <div id="intro-all-icons">
-            <div>
-                <p>Auto click</p>
-                <img class="introicon" src="./assets/images/icons/autoclickicon.png" alt="">
-                <p class="description">+ 10 clicks/s</p>
+        <!-- Introduction -->
+        <div id="intro">
+            <h1> Welcome to Crunch Time!</h1>
+            <p id="intro-text">
+                <br>
+                <br>
+                You are an aspiring developer who has been tasked with finishing a project that's due tomorrow.
+                They have kindly given you 20 seconds to do so.
+                <br>
+                Press on a keyboard or use your physical keyboard on desktop to gain points.
+                <br>
+                <img id="keyboardintro" src="./assets/images/keyboardgreen.png" alt="">
+                <br>
+                Spend those points on upgrades:
+            </p>
+            <!-- Power up icons and description -->
+            <div id="intro-all-icons">
+                <div>
+                    <h2 class="h2-intro">Auto click</h2>
+
+                    <img class="introicon" src="./assets/images/icons/autoclickicon.png" alt="">
+                    <h3 class="description">+ 10 clicks/s</h3>
+                </div>
+                <div>
+                    <h2 class="h2-intro">Click x 2</h2>
+                    <img class="introicon" src="./assets/images/icons/twohandsicon.png" alt="">
+                    <h3 class="description">Doubles Presses</h3>
+                </div>
+                <div>
+                    <h2 class="h2-intro">Click x 4</h2>
+                    <img class="introicon" src="./assets/images/icons/brainicon.png" alt="">
+                    <h3 class="description">Quadruples Presses <h3>
+                </div>
             </div>
-            <div>
-                <p>Click x 2</p>
-                <img class="introicon" src="./assets/images/icons/twohandsicon.png" alt="">
-                <p class="description">Doubles Presses</p>
-            </div>
-            <div>
-                <p>Click x 4</p>
-                <img class="introicon" src="./assets/images/icons/brainicon.png" alt="">
-                <p class="description">Quadruples Presses </p>
-            </div>
+            <!-- Game start button -->
+            <button onclick="window.location.href='./game.html';" id="start">Start!</button>
         </div>
-        <button onclick="window.location.href='./game.html';" id="start">Start!</button>
-    </div>
-</main>
+    </main>
     <script src="./assets/js/script.js"></script>
 </body>
 

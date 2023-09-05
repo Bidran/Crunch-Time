@@ -229,6 +229,7 @@ Fix: Switched to black color text with a white text shadow for better accessibil
 
 * The website was styled using CSS.
 
+* The website functionality was developed using Javascript.
 
 ## Deployment & Local Development
 

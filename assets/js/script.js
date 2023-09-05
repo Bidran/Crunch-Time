@@ -46,8 +46,6 @@ function doubleClick (){
         document.getElementById("scorenum").innerText = clicks;
         clickClick = clickClick*2;
         final += 200;
-
-       
     }
 }
 
@@ -84,7 +82,6 @@ let highscore = 0;
 
 localStorage.setItem("highscore", highscore);
 
-
 /**
  * Timer which counts down from 20, adds the score and resets value after finishing the game
  */
@@ -98,16 +95,14 @@ setInterval(function times(){
     let finalScore = clicks + final;
     if (finalScore > highscoreValue) {
         const numberFormatter = Intl.NumberFormat('en-US');
-      const formatted = numberFormatter.format(highscoreValue);
+        const formatted = numberFormatter.format(highscoreValue);
         document.getElementById('highscore-end').innerHTML = "You've beaten your previous record of " + formatted;
         localStorage.setItem("highscore", finalScore);
-       
     }
-
     else if (finalScore < highscoreValue){
         let highscoreValue = localStorage.getItem("highscore");
         const numberFormatter = Intl.NumberFormat('en-US');
-      const formatted = numberFormatter.format(highscoreValue);
+        const formatted = numberFormatter.format(highscoreValue);
         document.getElementById('highscore-end').innerHTML = "You have not beaten your previous record of " + formatted;
     }
     
@@ -119,7 +114,6 @@ setInterval(function times(){
     let buttons = document.getElementsByClassName('allbuttons')[0]
     buttons.style.display = "none";
     enable(button);
-  
 
   } else  {
     document.getElementById("countdown").innerHTML = timeleft + "s";
@@ -127,22 +121,10 @@ setInterval(function times(){
      disable(button);}
 }, 1000);
 
-var highscoreNew = 0;
-
-
-function highscoreSave(){
-    
-}
-
-
-
-
-
 /**
  * Resets the game back to main screen, hiding final screen and resetting values
  */
 function retry(){
-    
     let finalScreen = document.getElementById('final-score');
     finalScreen.style.display = "none";
     let buttons = document.getElementsByClassName('allbuttons')[0]
@@ -153,7 +135,6 @@ function retry(){
      timeleft = 20;
      final = 0;
 }
-
 
 /**
  * Zoom keyboard when action is done
@@ -173,25 +154,44 @@ var buttonclick0 = document.getElementsByClassName('icon')[0];
 var buttonclick1 = document.getElementsByClassName('icon')[1];
 var buttonclick2 = document.getElementsByClassName('icon')[2];
 
+/**
+ * Zoom button when action is done
+ */
 function zoomButton(){
     buttonclick0.style.transform = "scale(1.1)"
 }
 
-function zoomOutButton(){
-    buttonclick0.style.transform = "scale(100%)";
-}
-
+/**
+ * Zoom button when action is done
+ */
 function zoomButton1(){
     buttonclick1.style.transform = "scale(1.1)"
 }
 
-function zoomOutButton1(){
-    buttonclick1.style.transform = "scale(100%)";
-}
+/**
+ * Zoom button when action is done
+ */
 function zoomButton2(){
     buttonclick2.style.transform = "scale(1.1)"
 }
 
+/**
+ * Zoom out button when action is done
+ */
+function zoomOutButton(){
+    buttonclick0.style.transform = "scale(100%)";
+}
+
+/**
+ * Zoom out button when action is done
+ */
+function zoomOutButton1(){
+    buttonclick1.style.transform = "scale(100%)";
+}
+
+/**
+ * Zoom out button when action is done
+ */
 function zoomOutButton2(){
     buttonclick2.style.transform = "scale(100%)";
 }

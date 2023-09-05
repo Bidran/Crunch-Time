@@ -79,6 +79,10 @@ body {
         typing 1.5s steps(100, start);
 }
 
+.h2-intro {
+    font-size: 1em;
+}
+
 #keyboardintro {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -97,7 +101,7 @@ body {
 
 .description {
     margin: 0;
-    font-size: smaller;
+    font-size: medium;
 
 }
 
@@ -144,6 +148,10 @@ body {
     position: absolute;
 }
 
+h1 {
+    visibility: hidden;
+}
+
 #keyboard {
     width: 100%;
 }
@@ -184,6 +192,10 @@ header {
 .score {
     margin-left: 5%;
     width: fit-content;
+}
+
+.header-element h2 {
+    font-size: 1em;
 }
 
 .time {
@@ -277,7 +289,7 @@ header {
     border: 0.4rem ridge #306230;
 }
 
-#home:hover{
+#home:hover {
     background-color: rgba(37, 63, 39, 0.377);
 }
 
@@ -298,6 +310,7 @@ header {
         margin-left: 12%;
     }
 }
+
 #home {
     margin-top: 0.5em;
 }
@@ -455,6 +468,14 @@ header {
 
     #fourofour-button {
         font-size: 5rem;
+    }
+
+    .h2-intro {
+        font-size: 1.5em;
+    }
+
+    .description {
+        font-size: 1.5em;
     }
 }
 
