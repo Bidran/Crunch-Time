@@ -304,7 +304,7 @@ To clone the Crunch-Time repository:
 <br>
 <img src="./docs/lighthouse/lighthousedesktophomewithout.PNG" alt= “Lighthouse introduction desktop” >
 <br>
-<img src="./docs/lighthouse/lighthousedesktophomewith.PNG" alt= “Lighthouse introduction desktop” >
+<img src="./docs/lighthouse/lighthousedesktophomewith.PNG" alt= “Lighthouse introduction desktop”>
 * Lighthouse shows slower performance because of stylistic choice of using an animation which takes 1.5 seconds to finish.
 <br>
 <img src="./docs/lighthouse/lighthousedesktopgame.PNG" alt= “Lighthouse game desktop” >
@@ -329,25 +329,26 @@ To clone the Crunch-Time repository:
 
   1. On smaller devices, background colour would show between header and background image.
       
-      <img src= "./docs/bugs/bugmargin">
+     
+      <img src="./docs/bugs/bugmargin.PNG">
  
       This issue was solved by putting a -2px margin on top.
  
    2. Introduction icons were not centered
       
-      <img src= "./docs/bugs/bugintroicons" height = 400px>
+      <img src="./docs/bugs/bugintroicons" height = 400px>
  
       This issue was solved by making each of the divs have fixed width.
 
    3. The highscore was immediately saved as an old score.
       
-      <img src= "./docs/bugs/highscore.png" height = 400px>
+      <img src="./docs/bugs/highscore.png" height = 400px>
  
       This issue was solved by replacing highscore functioning to use local storage rather than basic variables.
     
     4. Validator was showing duplicate id names
       
-      <img src= "./docs/bugs/autoclick.img" height = 400px>
+      <img src="./docs/bugs/autoclick.img" height = 400px>
  
       This issue was solved removing the id names which were caused by copying the img elements.
 
