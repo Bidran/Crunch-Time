@@ -276,7 +276,6 @@ header {
 
 #retry:hover {
     background-color: rgba(37, 63, 39, 0.377);
-
 }
 
 #home {
@@ -353,6 +352,7 @@ header {
 
     #final-score {
         height: 200vh;
+        font-size: x-large;
     }
 
     .icon {
@@ -367,6 +367,9 @@ header {
         flex-direction: column;
 
     }
+    .header-element {
+        font-size: 4vw;
+    }
 
     .clickbutton {
         width: 80px;
@@ -375,6 +378,8 @@ header {
     .buttontext {
         font-size: medium;
     }
+    #retry {font-size: 3rem;}
+    #home {font-size: 3rem;}
 }
 
 /* Media querie for screen height max 300px */
@@ -386,7 +391,7 @@ header {
     }
 
     .icon {
-        width: 15%;
+        width: 20%;
     }
 
     .allbuttons {
@@ -401,10 +406,15 @@ header {
     .clickbutton {
         width: 80px;
     }
-
+#final-score {
+    font-size: large;
+}
     .buttontext {
         font-size: medium;
     }
+
+    #retry {font-size: 2em;}
+    #home {font-size: 2em;}
 }
 
 /* Media querie for screen width min 800px */
