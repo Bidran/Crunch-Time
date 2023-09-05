@@ -81,11 +81,32 @@ View the live site: [Crunch Time!](https://bidran.github.io/Crunch-Time/)
 
 ## Design
 
+### Colour Scheme
+
+I chose the colors which were used on a gif [Background image by Nela Gluhak](https://www.artstation.com/artwork/qQP2vL) which influnced most of my design.
+
+![Colour Palette](./docs/design/colors.png)
+
+
 ### Typography
 
-Font family VT323 was used with monospace functioning as a backup font.
+Font family VT323 was used with monospace functioning as a backup font. This font was chosen because it lines up with the rest of the design which gives off retro aesthetic.
 
 ### Imagery
+
+![Background image modified](./docs/design/pcbackground.gif)
+
+The background image used was ![Background image by Nela Gluhak](./docs/design/pc.gif) which was then modified by me to remove elements on the side to better fit website framing.
+
+![The keyboard by Symuhn](./docs/design/keyboard.png)
+The keyboard with simple design was chosen to avoid making the screen look cluttered,
+The colors were changed to fit the colors of the background.
+
+![Icons by VectorPixelStar](./docs/design/icons.jpg)
+
+Robotic pixel art which I changed to white neutral color to avoid clashing with already strong colors that are present.
+
+
 
 Images used were from stock images websites Shutterstock, ArtStation and Pixilart. They have been credited in the [credits](#Credits) section.
 
@@ -117,6 +138,7 @@ Wireframes created for desktop and mobile showing the original idea behind the p
 The website is comprised of three pages. Introduction page, game page & 404 page.
 
 ### General features on each page
+
 
 
 #### Intro Page.
@@ -204,13 +226,7 @@ Fix: Switched to black color text with a white text shadow for better accessibil
 
 * [Github](https://github.com) - To save and store the files for the website.
 
-* [Font Awesome](https://fontawesome.com) - For the iconography on the website.
-
 * [Google Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot and test features, solve issues with responsiveness and styling.
-
-* [ChatGPT](https://chat.openai.com) - To create some of content specific text.
-
-* [11zon](https://www.11zon.com/) - To compress images.
 
 * [Shutterstock](https://www.shutterstock.com/) - To acquire royalty free images.
 
@@ -221,6 +237,8 @@ Fix: Switched to black color text with a white text shadow for better accessibil
 * [Am I Responsive?](http://ami.responsivedesign.is/) - To show the website image on a range of devices.
 
 * [Pixlr](https://pixlr.com/) - To edit the images to fit the theme of the website.
+
+* [Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html) - To edit the gif and icons to fit website design.
 
 
 ### Languages Used
@@ -346,12 +364,11 @@ To clone the Crunch-Time repository:
  
       This issue was solved by replacing highscore functioning to use local storage rather than basic variables.
     
-    4. Validator was showing duplicate id names.
+   4. Validator was showing duplicate id names.
       
       <img src="./docs/bugs/autoclickimg.PNG" height = 400px>
  
       This issue was solved removing the id names which were caused by copying the img elements.
-
 
 
 
@@ -365,8 +382,6 @@ Functional testing was made troughout the development on various browsers (Opera
 
 
 
-
-
 ---------
 
 
@@ -376,24 +391,23 @@ Functional testing was made troughout the development on various browsers (Opera
 
 ### Content
 
-Parts of the website were inspired by [Brooklyn Boulders](https://brooklynboulders.com)
+
 
 ### Media
 A variety of stock images from [Pexels](https://www.pexels.com/) & [Shutterstock](https://www.shutterstock.com/) were used for this project.
 
 * Introduction
     * [Keyboard by Symuhn](https://www.pixilart.com/art/rfp-gaming-keyboard-588fd42e13fb9f2?)
-    * [Button icons by Nela Gluhak ](https://www.artstation.com/artwork/qQP2vL)
+    * [Button icons by VectorPixelStar ](https://www.shutterstock.com/image-vector/automation-icons-set-robotics-logo-mechanical-778219618)
 
 * Game page
-    * [Background image by Symuhn](https://www.pixilart.com/art/rfp-gaming-keyboard-588fd42e13fb9f2?)
+    * [Background image by Nela Gluhak](https://www.artstation.com/artwork/qQP2vL)
     * [Keyboard by Symuhn](https://www.pixilart.com/art/rfp-gaming-keyboard-588fd42e13fb9f2?)
 
     * [Button icons by VectorPixelStar ](https://www.shutterstock.com/image-vector/automation-icons-set-robotics-logo-mechanical-778219618)
 
     
    
-
 
 ### Acknowledgments
 
