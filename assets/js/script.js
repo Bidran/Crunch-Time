@@ -82,9 +82,11 @@ function disable(){
 
 let highscore = 0;
 
+localStorage.setItem("highscore", highscore);
+
 
 /**
- * Timer which counts down from 20
+ * Timer which counts down from 20, adds the score and resets value after finishing the game
  */
 var timer ;
 setInterval(function times(){
@@ -92,22 +94,24 @@ setInterval(function times(){
   if(timeleft <= 0){
     clearInterval(timer);
     document.getElementById("countdown").innerHTML = timeleft;
+    let highscoreValue = localStorage.getItem("highscore");
     let finalScore = clicks + final;
-   
-    if (finalScore > highscore) {
-        document.getElementById('highscore-end').innerHTML = "You've beaten your previous record of " + highscore.toLocaleString();
-        let newHighScore = finalScore;
-        highscore = newHighScore;
+    if (finalScore > highscoreValue) {
+        const numberFormatter = Intl.NumberFormat('en-US');
+      const formatted = numberFormatter.format(highscoreValue);
+        document.getElementById('highscore-end').innerHTML = "You've beaten your previous record of " + formatted;
+        localStorage.setItem("highscore", finalScore);
+       
     }
 
-    else if (highscore > finalScore){
-        document.getElementById('highscore-end').innerHTML = "You have not beaten your previous record of " + highscore.toLocaleString();
+    else if (highscoreValue > finalScore){
+        let highscoreValue = localStorage.getItem("highscore");
+        const numberFormatter = Intl.NumberFormat('en-US');
+      const formatted = numberFormatter.format(highscoreValue);
+        document.getElementById('highscore-end').innerHTML = "You have not beaten your previous record of " + formatted;
     }
-
-
-
-    document.getElementById("final-score-text").innerHTML = finalScore.toLocaleString() + ' clicks';
     
+    document.getElementById("final-score-text").innerHTML = finalScore.toLocaleString() + ' clicks';
     let finalScreen = document.getElementById('final-score');
     finalScreen.style.display = "block";
     clickClick = 0;
