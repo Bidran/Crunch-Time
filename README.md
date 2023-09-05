@@ -471,7 +471,7 @@ Functional testing was made troughout the development on various browsers (Opera
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
-| High-score lower| When you don't beat your old score, the game tells you| Beat the previous score | The score was updated with a message showing the previous higher score | Pass|
+| High-score lower| When you don't beat your old score, the game tells you| Didn't beat the previous score | The score was updated with a message showing the previous higher score | Pass|
 <hr>
 
 
