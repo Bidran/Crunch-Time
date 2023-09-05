@@ -1,12 +1,11 @@
-
-
-
 let keyboard = document.getElementById("keyboardimg");
-
-
-
-
 document.getElementById("scorenum").innerHTML = 0;
+
+
+var clicks = 0;
+var clickSecond = 0;
+var final = 0;
+var clickClick = 1
 
 /**
  * Incrementally adds number of clicks/keypresses by 1 and adds it to current score
@@ -15,13 +14,6 @@ function addClicks() {
      clicks += clickClick; 
 	document.getElementById("scorenum").innerText = clicks;  
 };
-
-var clicks = 0;
-var clickSecond = 0;
-
-
-
-
 
 
 setInterval(function() {
@@ -43,9 +35,6 @@ function autoClick() {
 		final += 20;
 	}
 }
-
-var final = 0;
-var clickClick = 1
 
 /**
  * Takes away 200 from score and makes clicks give twice the amount
@@ -71,14 +60,12 @@ function x4Click(){
     }
 }
 
-
-
-
-
-
 var timeleft = 20;
 var button = document.getElementById('retry')
 
+/**
+ * Enables retry button after 1 seconds
+ */
 function enable() {
    
     setTimeout(function(){
@@ -86,11 +73,12 @@ function enable() {
       }, 1000);
 }
 
+/**
+ * Disables retry button
+ */
 function disable(){
     button.disabled = true;
 }
-
-
 
 /**
  * Timer which counts down from 20
@@ -118,6 +106,10 @@ setInterval(function times(){
      disable(button);}
 }, 1000);
 
+
+/**
+ * Resets the game back to main screen, hiding final screen and resetting values
+ */
 function retry(){
     
     let finalScreen = document.getElementById('final-score');
@@ -131,14 +123,11 @@ function retry(){
      final = 0;
 }
 
-
-
 /**
  * Zoom keyboard when action is done
  */
 function zoom(){
     keyboard.style.transform = "scale(1.02)";
-   
 }
 
 /**
@@ -148,16 +137,12 @@ function zoomOut(){
     keyboard.style.transform = "scale(100%)";
 }
 
-
-
-
 var buttonclick0 = document.getElementsByClassName('icon')[0];
 var buttonclick1 = document.getElementsByClassName('icon')[1];
 var buttonclick2 = document.getElementsByClassName('icon')[2];
 
 function zoomButton(){
     buttonclick0.style.transform = "scale(1.1)"
-   
 }
 
 function zoomOutButton(){
@@ -166,7 +151,6 @@ function zoomOutButton(){
 
 function zoomButton1(){
     buttonclick1.style.transform = "scale(1.1)"
-   
 }
 
 function zoomOutButton1(){
@@ -174,7 +158,6 @@ function zoomOutButton1(){
 }
 function zoomButton2(){
     buttonclick2.style.transform = "scale(1.1)"
-   
 }
 
 function zoomOutButton2(){

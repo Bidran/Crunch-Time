@@ -1,4 +1,7 @@
+/* Site wide */
+
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -9,85 +12,71 @@ body {
     background-color: #8aac0f;
 }
 
-header {
-    background-color: #0f3811;
-    margin-bottom: 0px;
-    width: 100%;
-   
-    position: relative;
-    z-index: 3;
-}
-
-.index {position: relative;
-z-index: 4;}
+/* 404 page */
 
 #fourofour {
-   
-        position: absolute;
-        background-color: black;
-        top: 0;
-       width: 100%;
-       height: 100%;
-        z-index: 999;
-        background-color: rgb(15, 1, 1);
-        color: #70af6d;
-        font-size: 1.5rem;
-        text-align: center;
-      
-    }
 
-#fourofour p{margin-top: 1.5rem;
+    position: absolute;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgb(15, 1, 1);
+    color: #70af6d;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#fourofour p {
+    margin-top: 1.5rem;
     margin-bottom: 6rem;
     font-size: 4rem;
-   
 }
 
 #fourofour-button {
-        font-size: 2rem;
-        padding: 1rem;
-     
-        height: fit-content;
-        margin-top: 7rem;
-        background-color: rgb(15, 1, 1);
-        color: #70af6d;
-        border: 0.4rem ridge #306230;
-      
-      width: fit-content;
-        
+    font-size: 2rem;
+    padding: 1rem;
+
+    height: fit-content;
+    margin-top: 7rem;
+    background-color: rgb(15, 1, 1);
+    color: #70af6d;
+    border: 0.4rem ridge #306230;
+    width: fit-content;
 }
 
 #fourofour-button:hover {
     background-color: rgba(37, 63, 39, 0.377);
-    
 }
 
-
+/* Introduction page */
 
 
 #intro {
     position: absolute;
     background-color: black;
     top: 0;
-   width: 100%;
-   height: 200%;
+    width: 100%;
+    height: 200%;
     z-index: 999;
     background-color: rgb(15, 1, 1);
     line-height: 150%;
     color: #70af6d;
     font-size: normal;
     text-align: center;
-  
-    
 }
 
-#intro-text {font-size: 15px;
-    
+#intro-text {
+    font-size: 15px;
+
     letter-spacing: .15em;
     margin: 0 auto;
     white-space: normal;
     overflow: hidden;
     animation:
-     typing 1.5s steps(100, start);}
+        typing 1.5s steps(100, start);
+}
 
 #keyboardintro {
     margin-top: 2em;
@@ -101,15 +90,14 @@ z-index: 4;}
 
 #intro-all-icons {
     margin-top: 2em;
- 
     display: flex;
     justify-content: space-around;
 }
 
-.description  {
+.description {
     margin: 0;
     font-size: smaller;
-    
+
 }
 
 #intro-all-icons div {
@@ -117,62 +105,63 @@ z-index: 4;}
 }
 
 #start {
-    
-        font-size: 2rem;
-        padding: 1rem;
-       
-        height: fit-content;
-        margin-top: 2rem;
-        background-color: rgb(15, 1, 1);
-        color: #70af6d;
-        border: 0.4rem ridge #306230;
-      
-      width: 100%;
-        
-   
+    font-size: 2rem;
+    padding: 1rem;
+    height: fit-content;
+    margin-top: 2rem;
+    background-color: rgb(15, 1, 1);
+    color: #70af6d;
+    border: 0.4rem ridge #306230;
+    width: 100%;
 }
+
 #start:hover {
     background-color: rgba(37, 63, 39, 0.377);
-    
+
 }
 
-.clickbutton {
-    
-    object-fit: contain;
-    width: fit-content;
-       
-   }
+/* Game page */
 
-.allbuttons {
+.background {
+    margin-top: 0px;
+    width: 100vw;
+    height: 70vh;
+    overflow: hidden;
     position: absolute;
-    bottom: 30%;
-    margin-left: 10%;
-    display: flex;
-   
-
-}
-.icon {
-    object-fit: contain;
-    width: 60%;
-    text-align: center;
- 
-  background-color: rgba(241, 224, 224, 0);
-  padding: 2px;
-  border: 4px ridge rgba(0, 0, 0, 0.342);
-
+    object-fit: fill;
+    z-index: 2;
+    margin-top: -2px;
 }
 
+#image {
+    width: 100%;
+    object-fit: fill;
+    overflow: hidden;
+    transform: translate(0%, -18%);
+    z-index: 2;
+    margin-top: 0px;
+    position: absolute;
+}
 
+#keyboard {
+    width: 100%;
+}
 
-.buttontext {
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-    text-align: center;
-   width: fit-content;
-    font-size: 1em;
-    text-shadow: 0px 0px 3px rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0);
-    
+#keyboardimg {
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    bottom: 0;
+    z-index: 4;
+}
+
+/* Score and time elements */
+header {
+    background-color: #0f3811;
+    margin-bottom: 0px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
 }
 
 .header-element {
@@ -185,42 +174,74 @@ z-index: 4;}
     font-weight: bold;
     margin-top: 0.5%;
     display: inline-block;
-  flex-direction: row;
+    flex-direction: row;
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
     justify-content: center;
     font-size: 6vw;
-    
 }
-.score {margin-left: 5%;
-   width: fit-content;
+
+.score {
+    margin-left: 5%;
+    width: fit-content;
 }
+
 .time {
     position: absolute;
     left: 20%;
-   margin-left: 55%;
+    margin-left: 55%;
 }
-.background {
-    margin-top: 0px;
-    width: 100vw;
-    height: 70vh;
-    overflow: hidden;
+
+.index {
+    position: relative;
+    z-index: 4;
+}
+
+/* Clickable buttons */
+
+.clickbutton {
+
+    object-fit: contain;
+    width: fit-content;
+}
+
+.allbuttons {
     position: absolute;
-    object-fit: fill;
-    z-index: 2;
-    margin-top: -2px;
-  
+    bottom: 30%;
+    margin-left: 10%;
+    display: flex;
+
+
 }
 
+.icon {
+    object-fit: contain;
+    width: 60%;
+    text-align: center;
+    background-color: rgba(241, 224, 224, 0);
+    padding: 2px;
+    border: 4px ridge rgba(0, 0, 0, 0.342);
 
+}
+
+.buttontext {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+    font-size: 1em;
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+/* Final screen */
 
 #final-score {
     position: absolute;
     background-color: black;
     top: 0;
-   width: 100vw;
-   height: 100vh;
-    
-    
+    width: 100vw;
+    height: 100vh;
     z-index: 99;
     background-color: rgb(15, 1, 1);
     line-height: 150%;
@@ -235,7 +256,6 @@ z-index: 4;}
     padding: 3rem;
     width: fit-content;
     height: fit-content;
-   
     background-color: rgb(15, 1, 1);
     color: #70af6d;
     border: 0.4rem ridge #306230;
@@ -243,58 +263,47 @@ z-index: 4;}
 
 #retry:hover {
     background-color: rgba(37, 63, 39, 0.377);
-    
-}
 
-#image {
-    width: 100%;
-    object-fit: fill;
-    overflow: hidden;
-    transform: translate(0%,-18%);
-    z-index: 2;
-    margin-top: 0px;
-    position: absolute;
-}
-
-#keyboard {
-    width: 100%;
 }
 
 
 
+/* Media querie for screen width min 600px */
 
-#keyboardimg {
-    width: 100%;
-    height: 20%;
-   position: fixed;
-   bottom: 0;
-    z-index: 4;
-    
-}
-
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 
     .icon {
         width: 50%;
     }
+
     #keyboardimg {
         width: 70%;
-        
         margin-left: 15%;
     }
-    .allbuttons {margin-left: 12%;}
+
+    .allbuttons {
+        margin-left: 12%;
+    }
 }
 
 
+
+/* Media querie for screen width min 700px */
 @media screen and (min-width: 700px) {
-  
-    .icon {width: 25%;}
-    .allbuttons {margin-left: 20%;}
-    #keyboardimg {
-        width: 60%;
-        
+
+    .icon {
+        width: 25%;
+    }
+
+    .allbuttons {
         margin-left: 20%;
     }
+
+    #keyboardimg {
+        width: 60%;
+        margin-left: 20%;
+    }
+
     #keyboardintro {
         width: 40%;
     }
@@ -302,16 +311,81 @@ z-index: 4;}
     #intro p {
         font-size: large;
     }
-   
+
 }
 
 
+/* Media querie for screen height max 500px */
+@media screen and (max-height: 500px) {
+    #keyboardimg {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    #final-score {
+        height: 200vh;
+    }
+
+    .icon {
+        width: 40%;
+    }
+
+    .allbuttons {
+        position: absolute;
+        bottom: 2%;
+        margin: 6px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .clickbutton {
+        width: 80px;
+    }
+
+    .buttontext {
+        font-size: medium;
+    }
+}
+
+/* Media querie for screen height max 300px */
+
+@media screen and (max-height: 300px) {
+    #keyboardimg {
+        width: 40%;
+        margin-left: 30%;
+    }
+
+    .icon {
+        width: 15%;
+    }
+
+    .allbuttons {
+        position: absolute;
+        bottom: 0%;
+        margin: 6px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .clickbutton {
+        width: 80px;
+    }
+
+    .buttontext {
+        font-size: medium;
+    }
+}
+
+/* Media querie for screen width min 800px */
 @media screen and (min-width: 800px) {
-    
-   
-.icon {
-    width: 15%;
-}
+
+
+    .icon {
+        width: 15%;
+    }
+
     .allbuttons {
         position: absolute;
         bottom: 5%;
@@ -319,63 +393,75 @@ z-index: 4;}
         display: flex;
         flex-direction: column;
     }
+
     #intro p {
         font-size: larger;
     }
+
     .introicon {
         width: 4rem;
     }
 }
 
-@media screen and (max-height: 600px)  {
-    #keyboardimg {
-        width: 50%;
-        
-        margin-left: 15%;
-    }
-    .icon {width: 10%;}
-    .allbuttons {margin-left: 15%;}
+/* Media querie for screen width min 800px & max height 500px*/
 
-   
+@media screen and (min-width: 800px) and (max-height: 500px) {
+
+    .icon {
+        width: 40%;
+    }
 }
 
+/* Media querie for screen width min 1000px */
 @media screen and (min-width: 1000px) {
     #keyboardimg {
         width: 40%;
-        
         margin-left: 30%;
     }
-    .icon {width: 20%;}
+
+    .icon {
+        width: 20%;
+    }
+
     #start {
         font-size: 4rem;
         margin-top: 1em;
         width: 100%;
     }
+
     #fourofour {
         font-size: 2.5rem;
     }
 
-    #fourofour p{
+    #fourofour p {
         font-size: 7rem;
-       
     }
-    
+
     #fourofour-button {
         font-size: 5rem;
+    }
 }
+
+/* Media querie for screen width min 1200px */
 @media screen and (min-width: 1200px) {
-    
+
     #final-score {
         font-size: 4rem;
     }
-    .icon {width: 20%;}
+
+    .icon {
+        width: 20%;
+    }
+
     .clickbutton {
-        margin-bottom: 1em;    
-       }
-       .header-element {
+        margin-bottom: 1em;
+    }
+
+    .header-element {
         font-size: 3vw;
-       } 
-       #intro p {
+    }
+
+    #intro p {
         font-size: x-large;
         line-height: 110%;
     }
@@ -385,47 +471,24 @@ z-index: 4;}
     }
 }
 
-@media screen and (max-height: 600px) {
-    #keyboardimg {
-        width: 40%;
-        
-        margin-left: 30%;
-    }
-    .icon {width: 30%;}
-    .allbuttons {
-        position: absolute;
-        bottom: 2%;
-        margin: 6px;
-        display: flex;
-        flex-direction: column;
-
-    }
-    .clickbutton {width: 80px;}
-    .buttontext {font-size: medium;}
-}
-
-
-
-
+/* Media querie for screen width min 1800px */
 @media screen and (min-width: 1800px) {
     #keyboardimg {
         width: 30%;
         height: 150px;
         margin-left: 35%;
     }
-    #intro p {
-        font-size:xx-large;
-    }
- 
-  .time {
-    margin-left: 55%;
-  }
 
+    #intro p {
+        font-size: xx-large;
+    }
+
+    .time {
+        margin-left: 55%;
+    }
 }
 
-
-
-
+/* Media querie for screen width min 2000px */
 @media screen and (min-width: 2000px) {
     #keyboardimg {
         width: 30%;
@@ -434,9 +497,13 @@ z-index: 4;}
     }
 }
 
-
+/* Keyframes for text appearance in intro */
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
