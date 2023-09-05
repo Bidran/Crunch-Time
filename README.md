@@ -94,19 +94,20 @@ Font family VT323 was used with monospace functioning as a backup font. This fon
 
 ### Imagery
 
-*![Background image by Nela Gluhak](./docs/design/pc.gif)
+*   ![Background image by Nela Gluhak](./docs/design/pc.gif)
 
     The background image used was  which was then modified by me to remove elements on the side to better fit website framing.
 
-![Background image modified](./docs/design/pcbackground.gif)
+    ![Background image modified](./docs/design/pcbackground.gif)
 
 
-*<img src="./docs/design/keyboard.png" alt ="Keyboard" width="60%">
+*   <img src="./docs/design/keyboard.png" alt ="Keyboard" width="60%">
+    <br>
     The keyboard with simple design was chosen to avoid making the screen look cluttered,
     The colors were changed to fit the colors of the background.
 
-*<img src="./docs/design/icons.jpg" alt ="Icons" width="60%">
-
+*   <img src="./docs/design/icons.jpg" alt ="Icons" width="60%">
+    <br>
     Robotic pixel art which I changed to white neutral color to avoid clashing with already strong colors that are present.
 
 
