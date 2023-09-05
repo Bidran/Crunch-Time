@@ -158,8 +158,8 @@ The website is comprised of three pages. Introduction page, game page & 404 page
 
 * End screen section.
 
-    * Contains an final score and a retry button.
-    * This section gives the users the option to view their final score and to reset the game to try again.
+    * Contains a final score, a highscore, retry button and a home button .
+    * This section gives the users the option to view their final score, their biggest score, to reset the game to try again or to go back to the home page.
 
     <img src="./docs/features/finalscreen.PNG">
 
