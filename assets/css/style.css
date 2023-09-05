@@ -350,6 +350,10 @@ header {
         margin-left: 30%;
     }
 
+    #fourofour {
+        height: 150%;
+    }
+
     #final-score {
         height: 200vh;
         font-size: x-large;
@@ -400,7 +404,6 @@ header {
         margin: 6px;
         display: flex;
         flex-direction: column;
-
     }
 
     .clickbutton {

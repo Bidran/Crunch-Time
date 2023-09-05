@@ -391,7 +391,81 @@ No bugs were found by when testing the final version of the website.
 Functional testing was made troughout the development on various browsers (Opera, Chrome & Firefox), devices (PC & Samsung A23 5G) as well as [Responsive Design Checker](https://responsivedesignchecker.com).
 
 
+* The testing process aimed to verify that all navigation links on the respective pages accurately led to the intended pages as designed. This validation was achieved by actively clicking on each navigation link present on every page.
 
+    * Introduction
+
+    | Navigation Link | Page to Load    |
+    | --------------- | --------------- |
+    | Start           | game.html      |
+    
+    RESULT: All of the links navigated to the corresponding pages.
+
+    ---------
+
+    * Final screen.
+
+    | Navigation Link | Page to Load    |
+    | --------------- | --------------- |
+    | Retry           | game.html       |
+    | Home            | index.html       |
+    
+    RESULT: All of the links navigated to the corresponding pages.
+
+    ---------
+
+
+    * 404 page.
+
+    | Navigation Link | Page to Load    |
+    | --------------- | --------------- |
+    | I got this      | index.html      |
+    
+    RESULT: All of the links navigated to the corresponding pages.
+
+    ---------
+
+
+
+* The testing process aimed to verify if both clicks on keyboard image and keyboard typing resulted in clicks value going up.
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Keyboard | When clicked you gain points | Clicked keyboard | Gained Clicks | Pass|
+| Keyboard | When clicked you gain points | Typed any key on physical keyboard | Gained Clicks | Pass|
+
+
+* The testing process aimed to verify if power ups worked.
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Auto-Click | When clicked you lose 20 clicks and gain 10 clicks/s | Clicked Auto-Click icon | Lost 20 clicks and gained 10 clicks/s | Pass|
+| x2 Click | When clicked you lose 200 clicks and gain x2 Clicks | Clicked x2 icon | Lost 200 clicks and x2 clicks per click | Pass|
+| x4 Click | When clicked you lose 300 clicks and gain x4 Clicks | Clicked x4 icon | Lost 300 clicks and x4 clicks per click | Pass|
+
+
+* The testing process aimed to verify if time worked correctly.
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| Time | When the time reaches 0, the game stops and shows the score | Waited for the time to run out | The final screen was shown with the score achieved | Pass|
+
+* The testing process aimed to verify if high score worked correctly.
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| High-score higher| When you beat your old score, the game tells you| Beat the previous score | The score was updated with a message showing the previous lower score | Pass|
+
+* The testing process aimed to verify if high score worked correctly.
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+|  |  |  |  |  |
+| High-score lower| When you don't beat your old score, the game tells you| Beat the previous score | The score was updated with a message showing the previous higher score | Pass|
 
 
 
