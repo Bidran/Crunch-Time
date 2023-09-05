@@ -443,8 +443,8 @@ Functional testing was made troughout the development on various browsers (Opera
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
 | Auto-Click | When clicked you lose 20 clicks and gain 10 clicks/s | Clicked Auto-Click icon | Lost 20 clicks and gained 10 clicks/s | Pass|
-| x2 Click | When clicked you lose 200 clicks and gain x2 Clicks | Clicked x2 icon | Lost 200 clicks and x2 clicks per click | Pass|
-| x4 Click | When clicked you lose 300 clicks and gain x4 Clicks | Clicked x4 icon | Lost 300 clicks and x4 clicks per click | Pass|
+| x2 Click | When clicked you lose 200 clicks and gain x2 Clicks | Clicked x2 icon | Lost 200 clicks and gained x2 clicks per click | Pass|
+| x4 Click | When clicked you lose 300 clicks and gain x4 Clicks | Clicked x4 icon | Lost 300 clicks and gained x4 clicks per click | Pass|
 
 <hr>
 
