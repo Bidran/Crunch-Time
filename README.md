@@ -125,14 +125,14 @@ The website is comprised of three pages. Introduction page, game page & 404 page
     * An introduction on what "Crunch Time!" is.
     * Gives basic info about the game such as time, controls and power-ups.
 
-        <img src="">
+        <img src="./docs/features/intro.PNG">
 
  * Start button.
     
     * A button.
     * This allows the user to start the game, leading to another page.
 
-        <img src="">
+        <img src="./docs/features/start.PNG>
 
 #### Game page.
 
@@ -140,28 +140,28 @@ The website is comprised of three pages. Introduction page, game page & 404 page
     * Consists of "Clicks" and "Time". 
     * Allows the user to know how many clicks they have and how much time they have left.
 
-        <img src="">
-        <img src="">
+        <img src="./docs/features/header.PNG">
+      
       
  * Keyboard section.
     * Contains an image of a keyboard. 
     * Allows user to click the keyboard to gain points. 
 
-        <img src="">
+        <img src="./docs/features/keyboard.PNG">
 
   * Power-Ups section.
 
     * Contains an three buttons with different attributes.
     * This section gives the users the option to spend their earned points on upgrades (Auto-Click, x2 Clicks & x4 Clicks).
 
-    <img src="">
+    <img src="./docs/features/powerups.PNG">
 
 * End screen section.
 
     * Contains an final score and a retry button.
     * This section gives the users the option to view their final score and to reset the game to try again.
 
-    <img src="">
+    <img src="./docs/features/finalscreen.PNG">
 
 
 #### 404 page.
@@ -170,7 +170,7 @@ The website is comprised of three pages. Introduction page, game page & 404 page
     * Contains text with a button to lead to the home page.
     * This section provides users with the opportunity to go back to the home page with a click of a button if their page returns 404 error.
       
-      <img src="">
+      <img src="./docs/features/404page.PNG">
 
 
 ### Accessibility
