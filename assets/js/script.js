@@ -104,7 +104,7 @@ setInterval(function times(){
        
     }
 
-    else if (highscoreValue > finalScore){
+    else if (finalScore < highscoreValue){
         let highscoreValue = localStorage.getItem("highscore");
         const numberFormatter = Intl.NumberFormat('en-US');
       const formatted = numberFormatter.format(highscoreValue);

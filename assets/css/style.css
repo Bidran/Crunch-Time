@@ -238,7 +238,7 @@ header {
     background-color: black;
     top: 0;
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
     z-index: 99;
     background-color: rgb(15, 1, 1);
     line-height: 150%;
@@ -253,10 +253,10 @@ header {
 }
 
 #retry {
-    font-size: 4rem;
-    padding: 3rem;
-    width: fit-content;
-    height: fit-content;
+    font-size: 3rem;
+    padding: 0.5em;
+    width: 4em;
+    height: 2em;
     background-color: rgb(15, 1, 1);
     color: #70af6d;
     border: 0.4rem ridge #306230;
@@ -267,7 +267,19 @@ header {
 
 }
 
+#home {
+    font-size: 3rem;
+    padding: 0.5em;
+    width: 4em;
+    height: 2em;
+    background-color: rgb(15, 1, 1);
+    color: #70af6d;
+    border: 0.4rem ridge #306230;
+}
 
+#home:hover{
+    background-color: rgba(37, 63, 39, 0.377);
+}
 
 /* Media querie for screen width min 600px */
 
@@ -285,6 +297,9 @@ header {
     .allbuttons {
         margin-left: 12%;
     }
+}
+#home {
+    margin-top: 0.5em;
 }
 
 
