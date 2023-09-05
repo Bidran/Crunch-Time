@@ -39,32 +39,32 @@
 
         <!-- Background image -->
         <div class="background">
-            <img id="image" src="./assets/images/pcbackground.gif" alt="">
+            <img id="image" src="./assets/images/pcbackground.gif" alt="Background with a green retro pc sitting on a desk">
         </div>
 
         <!-- Keyboard element which is pressable -->
         <div id="keyboard">
             <img id="keyboardimg" onpointerdown="zoom()" onpointerup="addClicks(); zoomOut()"
-                src="./assets/images/keyboardgreen.png" alt="">
+                src="./assets/images/keyboardgreen.png" alt="Green keyboard (Clickable)">
         </div>
         <!-- 3 buttons which function as power-ups -->
         <div class="allbuttons" id="all">
             <div class="clickbutton index">
                 <p class="buttontext">Auto Click</p>
                 <img class="icon" onpointerdown="zoomButton()" onpointerup="zoomOutButton() ;autoClick()"
-                    src="./assets/images/icons/autoclickicon.png" alt="">
+                    src="./assets/images/icons/autoclickicon.png" alt="One robot hand (AutoClick)">
                 <p class="buttontext">20 Clicks</p>
             </div>
             <div class="clickbutton index">
                 <p class="buttontext">x2 Click</p>
                 <img class="icon" onpointerdown="zoomButton1()" onpointerup="doubleClick(); zoomOutButton1()"
-                    src="./assets/images/icons/twohandsicon.png" alt="">
+                    src="./assets/images/icons/twohandsicon.png" alt="Two robot hands (x2 Click)">
                 <p class="buttontext">200 Clicks</p>
             </div>
             <div class="clickbutton index">
                 <p class="buttontext">x4 Click</p>
                 <img class="icon" onpointerdown="zoomButton2()" onpointerup="x4Click() ; zoomOutButton2()"
-                    src="./assets/images/icons/brainicon.png" alt="">
+                    src="./assets/images/icons/brainicon.png" alt="Robot brain (x4 click)">
                 <p class="buttontext">300 Clicks</p>
             </div>
         </div>
