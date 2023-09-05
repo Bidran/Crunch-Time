@@ -3,7 +3,6 @@
 
 let keyboard = document.getElementById("keyboardimg");
 
-keyboard.oncontextmenu = "return false;"
 
 
 
@@ -102,7 +101,8 @@ setInterval(function times(){
   if(timeleft <= 0){
     clearInterval(timer);
     document.getElementById("countdown").innerHTML = timeleft;
-    document.getElementById("final-score-text").innerHTML = clicks + final + ' clicks';
+    let finalScore = clicks + final;
+    document.getElementById("final-score-text").innerHTML = finalScore.toLocaleString() + ' clicks';
     let finalScreen = document.getElementById('final-score');
     finalScreen.style.display = "block";
     clickClick = 0;
@@ -132,12 +132,6 @@ function retry(){
 }
 
 
-
-function outOfTime (){
-    if ( document.getElementById("countdown").innerHTML = "0") {
-        document.getElementById("final-score-text").innerHTML = clicks;
-    }
-}
 
 /**
  * Zoom keyboard when action is done
