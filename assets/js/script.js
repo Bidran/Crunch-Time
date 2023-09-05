@@ -106,7 +106,7 @@ setInterval(function times(){
     finalScreen.style.display = "block";
     clickClick = 0;
     clickSecond = 0;
-    let buttons = document.getElementsByClassName('allbuttons')[0]
+    let buttons = document.getElementsByClassName('allbuttons')[0];
     buttons.style.display = "none";
     enable(button);
 

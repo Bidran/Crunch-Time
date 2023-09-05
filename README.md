@@ -4,7 +4,7 @@
 
 View the live site: [Crunch Time!](https://bidran.github.io/Crunch-Time/)
 
-![Amiresponsive image of Crunch Time!]()
+![Amiresponsive image of Crunch Time!](./docs/amiresponsive/amiresponsive.PNG)
 
 ## CONTENTS
 
@@ -273,29 +273,43 @@ To clone the Crunch-Time repository:
 * HTML
   * No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
 
-![Introduction HTML Validator Results]()
+![Introduction HTML Validator Results](./docs/validators/htmlvalidatorhome.PNG)
 
-![Game HTML Validator Results]()
+![Game HTML Validator Results](./docs/validators/htmlvalidatorgame.PNG)
 
-![404 HTML Validator Results]()
+![404 HTML Validator Results](./docs/validators/htmlvalidator404.PNG)
 
 * CSS
     * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org)
+    <p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
       
-       
-![CSS Validator Results]()
+![CSS Validator Results](./docs/validators/cssvalidator.PNG)
     
+* Javascript
+    * No errors were found when passing through the [Jshint validator](https://jshint.com)
+    
+      
+![Javascript Validator Results](./docs/validators/jsvalidator.PNG)
 
 ### Lighthouse
 
 <details>
 <summary>Desktop lighthouse testing</summary>
 <br>
-<img src="./assets/docs/testing/lighthouse/lighthousehomedesktop.PNG" alt= “Lighthouse introduction desktop” >
+<img src="./docs/lighthouse/lighthousedesktophomewithout.PNG" alt= “Lighthouse introduction desktop” >
 <br>
-<img src="./assets/docs/testing/lighthouse/lighthouseaboutdesktop.PNG" alt= “Lighthouse game desktop” >
+<img src="./docs/lighthouse/lighthousedesktophomewith.PNG" alt= “Lighthouse introduction desktop” >
+* Lighthouse shows slower performance because of stylistic choice of using an animation which takes 1.5 seconds to finish.
 <br>
-<img src="./assets/docs/testing/lighthouse/lighthouseinductiondesktop.PNG" alt= “Lighthouse 404 desktop” >
+<img src="./docs/lighthouse/lighthousedesktopgame.PNG" alt= “Lighthouse game desktop” >
+<br>
+<img src="./docs/lighthouse/lighthousedesktop404.PNG" alt= “Lighthouse 404 desktop” >
 <br>
 
 </details>
@@ -303,17 +317,40 @@ To clone the Crunch-Time repository:
 <details>
 <summary>Mobile lighthouse testing</summary>
 <br>
-<img src="" alt= “Lighthouse introduction mobile” >
+<img src="./docs/lighthouse/lighthousephonehomewith.PNG" alt= “Lighthouse introduction mobile” >
 <br> 
-<img src="" alt= “Lighthouse game mobile” >
+<img src="./docs/lighthouse/lighthousephonegame.PNG" alt= “Lighthouse game mobile” >
 <br>
-<img src="" alt= “Lighthouse 404 mobile” >
+<img src="./docs/lighthouse/lighthousephone404.PNG" alt= “Lighthouse 404 mobile” >
 <br>
 </details>
 
 ### Solved Bugs
 
+  1. On smaller devices, background colour would show between header and background image.
+      
+      <img src= "./docs/bugs/bugmargin">
  
+      This issue was solved by putting a -2px margin on top.
+ 
+   2. Introduction icons were not centered
+      
+      <img src= "./docs/bugs/bugintroicons" height = 400px>
+ 
+      This issue was solved by making each of the divs have fixed width.
+
+   3. The highscore was immediately saved as an old score.
+      
+      <img src= "./docs/bugs/highscore.png" height = 400px>
+ 
+      This issue was solved by replacing highscore functioning to use local storage rather than basic variables.
+    
+    4. Validator was showing duplicate id names
+      
+      <img src= "./docs/bugs/autoclick.img" height = 400px>
+ 
+      This issue was solved removing the id names which were caused by copying the img elements.
+
 
 
 
@@ -323,7 +360,7 @@ No bugs were found by when testing the final version of the website.
 
 ### Functional Testing
 
-Functional testing was made troughout the development on various browsers (Opera, Chrome & Firefox) and devices (PC & Samsung A23 5G)
+Functional testing was made troughout the development on various browsers (Opera, Chrome & Firefox), devices (PC & Samsung A23 5G) as well as [Responsive Design Checker](https://responsivedesignchecker.com).
 
 
 
