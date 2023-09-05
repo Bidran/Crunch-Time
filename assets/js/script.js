@@ -78,7 +78,7 @@ let highscore = 0;
 localStorage.setItem("highscore", highscore);
 
 /**
- * Timer which counts down from 20, adds the score and resets value after finishing the game
+ * Timer which counts down from 20, adds the score, saves the high score and resets values after finishing the game
  */
 var timer ;
 setInterval(function times(){

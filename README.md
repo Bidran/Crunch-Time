@@ -12,6 +12,8 @@ View the live site: [Crunch Time!](https://bidran.github.io/Crunch-Time/)
   * [User Stories](#user-stories)
 
 * [Design](#design)
+  * [Colour Scheme](#Colour-Scheme)
+  * [Typography](#Typography)
   * [Imagery](#imagery)
   * [Wireframes](#wireframes)
 
@@ -34,9 +36,10 @@ View the live site: [Crunch Time!](https://bidran.github.io/Crunch-Time/)
   * [Solved Bugs](#solved-bugs)
   * [Known Bugs](#known-bugs)
   * [Functional testing](#functional-testing)
+  * [Missed Opportunity](#missed-opportunity)
 
 * [Credits](#credits)
-  * [Content](#content)
+  * [Code Used](#Code-Used)
   * [Media](#media)
   * [Acknowledgments](#acknowledgments)
 
@@ -96,16 +99,18 @@ Font family VT323 was used with monospace functioning as a backup font. This fon
 
 *   ![Background image by Nela Gluhak](./docs/design/pc.gif)
 
-    The background image used was  which was then modified by me to remove elements on the side to better fit website framing.
+    The background image used was  which was then modified by me to add a new screen and remove elements on the side to better fit website framing.
 
     ![Background image modified](./docs/design/pcbackground.gif)
-
-
+    <br>
+    <br>
+    <br>
 *   <img src="./docs/design/keyboard.png" alt ="Keyboard" width="60%">
     <br>
     The keyboard with simple design was chosen to avoid making the screen look cluttered,
     The colors were changed to fit the colors of the background.
-
+    <br>
+    <br>
 *   <img src="./docs/design/icons.jpg" alt ="Icons" width="60%">
     <br>
     Robotic pixel art which I changed to white neutral color to avoid clashing with already strong colors that are present.
@@ -242,6 +247,8 @@ Fix: Switched to black color text with a white text shadow for better accessibil
 * [Pixlr](https://pixlr.com/) - To edit the images to fit the theme of the website.
 
 * [Adobe Photoshop](https://www.adobe.com/ie/products/photoshop.html) - To edit the gif and icons to fit website design.
+
+* [Coolors](https://coolors.co) - To make an image of color palette used on the website.
 
 
 ### Languages Used
@@ -385,15 +392,27 @@ Functional testing was made troughout the development on various browsers (Opera
 
 
 
+
+
+
+### Missed Opportunity
+
+* Started the project late so didn't have time to implement features such as :
+    - Music: Wanted to use upbeat 8-bit music [Haters Gonna Hate by AdhesiveWombat](https://www.youtube.com/watch?v=u1nPP0lyzQM) , it goes nicely with overall theme.
+    - More power-ups
+    - Clean up code by splitting the code into more functions and making more variables. Overall not satisfied with code readability.
+
+
 ---------
 
 
 
 ## Credits
 
+### Code Used
 
-### Content
-
+*[How to Use Comma as Thousand Separator in JavaScript by Artturi Jalli](https://www.codingem.com/comma-thousand-separator-in-javascript/)
+*
 
 
 ### Media
@@ -406,14 +425,10 @@ A variety of stock images from [Pexels](https://www.pexels.com/) & [Shutterstock
 * Game page
     * [Background image by Nela Gluhak](https://www.artstation.com/artwork/qQP2vL)
     * [Keyboard by Symuhn](https://www.pixilart.com/art/rfp-gaming-keyboard-588fd42e13fb9f2?)
-
     * [Button icons by VectorPixelStar ](https://www.shutterstock.com/image-vector/automation-icons-set-robotics-logo-mechanical-778219618)
-
-    
-   
 
 ### Acknowledgments
 
-I would like to thank following people for helping me with my first project:
+I would like to thank following people for helping me with my second project:
     
 * [Gareth McGirr](https://github.com/Gareth-McGirr/) - My mentor, for helping me troughout this project with his advice
