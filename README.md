@@ -95,21 +95,21 @@ Wireframes created for desktop and mobile showing the original idea behind the p
 
 #### Introduction
 
-<img src="" alt= “” width="value" height="500px">
+<img src="./docs/wireframes/desktopintro.png" alt= “” width="value" height="500px">
 
-<img src="" alt= “” width="value" height="500px">
+<img src="./docs/wireframes/mobileintro.png" alt= “” width="value" height="500px">
 
 #### Game
 
-<img src="" alt= “” width="value" height="500px">
+<img src="./docs/wireframes/desktopgame.png" alt= “” width="value" height="500px">
 
-<img src="" alt= “” width="value" height="500px">
+<img src="./docs/wireframes/mobilegame.png" alt= “” width="value" height="500px">
 
 #### Score
 
-<img src="" alt= “” width="value" height="500px">
+<img src="./docs/wireframes/desktopscore.png" alt= “” width="value" height="500px">
 
-<img src="" alt= “” width="value" height="500px">
+<img src="./docs/wireframes/mobilescore.png" alt= “” width="value" height="500px">
 
 
 ### Features
@@ -132,7 +132,7 @@ The website is comprised of three pages. Introduction page, game page & 404 page
     * A button.
     * This allows the user to start the game, leading to another page.
 
-        <img src="./docs/features/start.PNG>
+        <img src="./docs/features/start.PNG">
 
 #### Game page.
 
