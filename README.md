@@ -435,6 +435,7 @@ Functional testing was made troughout the development on various browsers (Opera
 | Keyboard | When clicked you gain points | Clicked keyboard | Gained Clicks | Pass|
 | Keyboard | When clicked you gain points | Typed any key on physical keyboard | Gained Clicks | Pass|
 
+<hr>
 
 * The testing process aimed to verify if power ups worked.
 
@@ -445,6 +446,7 @@ Functional testing was made troughout the development on various browsers (Opera
 | x2 Click | When clicked you lose 200 clicks and gain x2 Clicks | Clicked x2 icon | Lost 200 clicks and x2 clicks per click | Pass|
 | x4 Click | When clicked you lose 300 clicks and gain x4 Clicks | Clicked x4 icon | Lost 300 clicks and x4 clicks per click | Pass|
 
+<hr>
 
 * The testing process aimed to verify if time worked correctly.
 
@@ -453,6 +455,8 @@ Functional testing was made troughout the development on various browsers (Opera
 |  |  |  |  |  |
 | Time | When the time reaches 0, the game stops and shows the score | Waited for the time to run out | The final screen was shown with the score achieved | Pass|
 
+<hr>
+
 * The testing process aimed to verify if high score worked correctly.
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
@@ -460,13 +464,15 @@ Functional testing was made troughout the development on various browsers (Opera
 |  |  |  |  |  |
 | High-score higher| When you beat your old score, the game tells you| Beat the previous score | The score was updated with a message showing the previous lower score | Pass|
 
+<hr>
+
 * The testing process aimed to verify if high score worked correctly.
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 |  |  |  |  |  |
 | High-score lower| When you don't beat your old score, the game tells you| Beat the previous score | The score was updated with a message showing the previous higher score | Pass|
-
+<hr>
 
 
 ### Missed Opportunity
