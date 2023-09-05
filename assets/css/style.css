@@ -53,6 +53,7 @@ body {
 /* Introduction page */
 
 
+
 #intro {
     position: absolute;
     background-color: black;
@@ -199,7 +200,6 @@ header {
 /* Clickable buttons */
 
 .clickbutton {
-
     object-fit: contain;
     width: fit-content;
 }
@@ -209,8 +209,6 @@ header {
     bottom: 30%;
     margin-left: 10%;
     display: flex;
-
-
 }
 
 .icon {
@@ -220,7 +218,6 @@ header {
     background-color: rgba(241, 224, 224, 0);
     padding: 2px;
     border: 4px ridge rgba(0, 0, 0, 0.342);
-
 }
 
 .buttontext {
@@ -249,6 +246,10 @@ header {
     font-size: xx-large;
     text-align: center;
     display: none;
+}
+
+#final-score-text {
+    font-weight: bold;
 }
 
 #retry {

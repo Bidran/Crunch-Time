@@ -9,6 +9,7 @@
 </head>
 
 <body onkeyup="addClicks(); zoomOut()" onkeydown="zoom()">
+    <main>
     <header class="index">
         <div class="header-element score">Clicks: <br>
             <p id="scorenum"><br></p>
@@ -27,38 +28,37 @@
         <img id="keyboardimg" onpointerdown="zoom()" onpointerup="addClicks(); zoomOut()"
             src="./assets/images/keyboardgreen.png" alt="">
     </div>
-    <section class="allbuttons" id="all">
+    <div class="allbuttons" id="all">
         <div class="clickbutton index">
             <p class="buttontext">Auto Click</p>
-            <img class="icon" onpointerdown="zoomButton()" onpointerup="zoomOutButton() ;autoClick()" id="autoclickimg"
+            <img class="icon" onpointerdown="zoomButton()" onpointerup="zoomOutButton() ;autoClick()"
                 src="./assets/images/icons/autoclickicon.png" alt="">
             <p class="buttontext">20 Clicks</p>
         </div>
         <div class="clickbutton index">
             <p class="buttontext">x2 Click</p>
-            <img class="icon" onpointerdown="zoomButton1()" onpointerup="doubleClick(); zoomOutButton1()"
-                id="autoclickimg" src="./assets/images/icons/twohandsicon.png" alt="">
+            <img class="icon" onpointerdown="zoomButton1()" onpointerup="doubleClick(); zoomOutButton1()" src="./assets/images/icons/twohandsicon.png" alt="">
             <p class="buttontext">200 Clicks</p>
         </div>
         <div class="clickbutton index">
             <p class="buttontext">x4 Click</p>
-            <img class="icon" onpointerdown="zoomButton2()" onpointerup="x4Click() ; zoomOutButton2()" id="autoclickimg"
-                src="./assets/images/icons/brainicon.png" alt="">
+            <img class="icon" onpointerdown="zoomButton2()" onpointerup="x4Click() ; zoomOutButton2()" src="./assets/images/icons/brainicon.png" alt="">
             <p class="buttontext">300 Clicks</p>
         </div>
-    </section>
+    </div>
     <div id="final-score"><strong>Congratulations!</strong>
         <br>
         <br>
         You've successfully published the project.
         <br>
         Your final score is:
-        <br><strong>
+        <br>
             <p id="final-score-text"></p>
-        </strong>
+        
         <br>
         <button onclick="retry()" id="retry" disabled>Retry?</button>
     </div>
+</main>
     <script src="./assets/js/script.js"></script>
 </body>
 
