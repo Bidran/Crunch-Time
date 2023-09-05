@@ -80,6 +80,9 @@ function disable(){
     button.disabled = true;
 }
 
+let highscore = 0;
+
+
 /**
  * Timer which counts down from 20
  */
@@ -90,7 +93,21 @@ setInterval(function times(){
     clearInterval(timer);
     document.getElementById("countdown").innerHTML = timeleft;
     let finalScore = clicks + final;
+   
+    if (finalScore > highscore) {
+        document.getElementById('highscore-end').innerHTML = "You've beaten your previous record of " + highscore.toLocaleString();
+        let newHighScore = finalScore;
+        highscore = newHighScore;
+    }
+
+    else if (highscore > finalScore){
+        document.getElementById('highscore-end').innerHTML = "You have not beaten your previous record of " + highscore.toLocaleString();
+    }
+
+
+
     document.getElementById("final-score-text").innerHTML = finalScore.toLocaleString() + ' clicks';
+    
     let finalScreen = document.getElementById('final-score');
     finalScreen.style.display = "block";
     clickClick = 0;
@@ -105,6 +122,16 @@ setInterval(function times(){
      timeleft -= 1;
      disable(button);}
 }, 1000);
+
+var highscoreNew = 0;
+
+
+function highscoreSave(){
+    
+}
+
+
+
 
 
 /**
@@ -122,6 +149,7 @@ function retry(){
      timeleft = 20;
      final = 0;
 }
+
 
 /**
  * Zoom keyboard when action is done
