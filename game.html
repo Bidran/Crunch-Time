@@ -15,31 +15,32 @@
 
 
 <!-- On key ups adds to the score and zooms in/out the keyboard -->
+
 <body onkeyup="addClicks(); zoomOut()" onkeydown="zoom()">
     <main>
         <header class="index">
             <!-- Score and time elements -->
             <div class="header-element score">
                 <h2>Clicks:
-                    <br>
-                    <p id="scorenum">
-                        <br>
-                    </p>
                 </h2>
+                <p id="scorenum">
+                    <br>
+                </p>
+
             </div>
             <div class="header-element time">
                 <h2>Time:
-                    <br>
-                    <p id="countdown">
-                        <br>
                 </h2>
+                <p id="countdown">
+                    <br>
                 </p>
             </div>
         </header>
 
         <!-- Background image -->
         <div class="background">
-            <img id="image" src="./assets/images/pcbackground.gif" alt="Background with a green retro pc sitting on a desk">
+            <img id="image" src="./assets/images/pcbackground.gif"
+                alt="Background with a green retro pc sitting on a desk">
         </div>
 
         <!-- Keyboard element which is pressable -->
