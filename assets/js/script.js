@@ -5,7 +5,7 @@ document.getElementById("scorenum").innerHTML = 0;
 var clicks = 0;
 var clickSecond = 0;
 var final = 0;
-var clickClick = 1
+var clickClick = 1;
 
 /**
  * Incrementally adds number of clicks/keypresses by 1 and adds it to current score
@@ -13,13 +13,12 @@ var clickClick = 1
 function addClicks() {
      clicks += clickClick; 
 	document.getElementById("scorenum").innerText = clicks;  
-};
+}
 
 
 setInterval(function() {
 	clicks += clickSecond; 
-	document.getElementById("scorenum").innerText = clicks; 
-}, 1000) 
+	document.getElementById("scorenum").innerText = clicks; }, 1000);
 
 /**
  * Item that auto clicks 10 times in one second
@@ -59,7 +58,7 @@ function x4Click(){
 }
 
 var timeleft = 20;
-var button = document.getElementById('retry')
+var button = document.getElementById('retry');
 
 /**
  * Enables retry button after 1 seconds
@@ -67,7 +66,7 @@ var button = document.getElementById('retry')
 function enable() {
    
     setTimeout(function(){
-        button.disabled = false
+        button.disabled = false;
       }, 1000);
 }
 
@@ -127,7 +126,7 @@ setInterval(function times(){
 function retry(){
     let finalScreen = document.getElementById('final-score');
     finalScreen.style.display = "none";
-    let buttons = document.getElementsByClassName('allbuttons')[0]
+    let buttons = document.getElementsByClassName('allbuttons')[0];
     buttons.style.display = 'flex';
     clicks = 0;
     clickClick = 1;
@@ -158,21 +157,21 @@ var buttonclick2 = document.getElementsByClassName('icon')[2];
  * Zoom button when action is done
  */
 function zoomButton(){
-    buttonclick0.style.transform = "scale(1.1)"
+    buttonclick0.style.transform = "scale(1.1)";
 }
 
 /**
  * Zoom button when action is done
  */
 function zoomButton1(){
-    buttonclick1.style.transform = "scale(1.1)"
+    buttonclick1.style.transform = "scale(1.1)";
 }
 
 /**
  * Zoom button when action is done
  */
 function zoomButton2(){
-    buttonclick2.style.transform = "scale(1.1)"
+    buttonclick2.style.transform = "scale(1.1)";
 }
 
 /**
