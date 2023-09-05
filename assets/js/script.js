@@ -1,7 +1,5 @@
 let keyboard = document.getElementById("keyboardimg");
 
-
-
 var clicks = 0;
 var clickSecond = 0;
 var final = 0;
@@ -14,7 +12,6 @@ function addClicks() {
      clicks += clickClick; 
 	document.getElementById("scorenum").innerText = clicks;  
 }
-
 
 setInterval(function() {
 	clicks += clickSecond; 
@@ -29,7 +26,6 @@ function autoClick() {
 	{
 		clicks -= 20; 
 		document.getElementById("scorenum").innerText = clicks;
-		
 		clickSecond += 10; 
 		final += 20;
 	}
