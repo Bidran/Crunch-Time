@@ -2,7 +2,7 @@
 
 "Crunch Time!" is a website hosting a clicker game in which your goal is to gain as much points as possible in given time using clicks and power-ups. 
 
-View the live site: [Chalk Climbing Centre](https://bidran.github.io/Crunch-Time/)
+View the live site: [Crunch Time!](https://bidran.github.io/Crunch-Time/)
 
 ![Amiresponsive image of Crunch Time!]()
 
@@ -281,11 +281,7 @@ To clone the Crunch-Time repository:
 * CSS
     * No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org)
       
-        <p>
-        <a href="https://jigsaw.w3.org/css-validator/check/referer">
-          <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"alt="Valid CSS!" />
-        </a>
-        </p>
+       
 ![CSS Validator Results]()
     
 
@@ -294,33 +290,24 @@ To clone the Crunch-Time repository:
 <details>
 <summary>Desktop lighthouse testing</summary>
 <br>
-<img src="./assets/docs/testing/lighthouse/lighthousehomedesktop.PNG" alt= “Lighthouse home desktop” >
+<img src="./assets/docs/testing/lighthouse/lighthousehomedesktop.PNG" alt= “Lighthouse introduction desktop” >
 <br>
-<img src="./assets/docs/testing/lighthouse/lighthouseaboutdesktop.PNG" alt= “Lighthouse about desktop” >
+<img src="./assets/docs/testing/lighthouse/lighthouseaboutdesktop.PNG" alt= “Lighthouse game desktop” >
 <br>
-<img src="./assets/docs/testing/lighthouse/lighthouseinductiondesktop.PNG" alt= “Lighthouse induction desktop” >
+<img src="./assets/docs/testing/lighthouse/lighthouseinductiondesktop.PNG" alt= “Lighthouse 404 desktop” >
 <br>
-<img src="./assets/docs/testing/lighthouse/lighthousemembershipdesktop.PNG" alt= “Lighthouse membership desktop” >
-<br>
-<img src="./assets/docs/testing/lighthouse/lighthousenewsdesktop.PNG" alt= “Lighthouse news desktop” >
-<br>
-<img src="./assets/docs/testing/lighthouse/lighthouse404desktop.PNG" alt= “Lighthouse 404 desktop” >
+
 </details>
 
 <details>
 <summary>Mobile lighthouse testing</summary>
 <br>
-<img src="./assets/docs/testing/lighthouse/lighthousehomemobile.PNG" alt= “Lighthouse home mobile” >
+<img src="" alt= “Lighthouse introduction mobile” >
 <br> 
-<img src="./assets/docs/testing/lighthouse/lighthouseaboutmobile.PNG" alt= “Lighthouse about mobile” >
+<img src="" alt= “Lighthouse game mobile” >
 <br>
-<img src="./assets/docs/testing/lighthouse/lighthouseinductionmobile.PNG" alt= “Lighthouse induction mobile” >
+<img src="" alt= “Lighthouse 404 mobile” >
 <br>
-<img src="./assets/docs/testing/lighthouse/lighthousemembershipmobile.PNG" alt= “Lighthouse membership mobile” >
-<br>
-<img src="./assets/docs/testing/lighthouse/lighthousenewsmobile.PNG" alt= “Lighthouse news mobile” >
-<br>
-<img src="./assets/docs/testing/lighthouse/lighthouse404mobile.PNG" alt= “Lighthouse news mobile” >
 </details>
 
 ### Solved Bugs
